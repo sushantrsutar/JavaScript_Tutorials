@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>promise demo 1</title>
+    <Script>
+        function prom(complate) {
+            let prom = new Promise(function (resolve, reject) {
+                if (complate) {
+                    resolve("promise is successfull")
+                } else {
+                    reject("error")
+                }
+            })
+            return prom;
+        }
+        let onfullFilled=(result)=>{console.log(result)}
+        let onRejection=(error)=>{console.log(error)}
+
+        prom(false).then(onfullFilled).catch(onRejection)
+        prom(true).then(onfullFilled).catch(onRejection)
+
+    </Script>
+</head>
+
+<body>
+
+</body>
+
+</html>

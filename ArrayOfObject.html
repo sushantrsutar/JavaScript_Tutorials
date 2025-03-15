@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Array of object</title>
+</head>
+<body>
+    <script>
+        let emp=[{empId:101,empName:"amol",empSal:10000},
+                 {empId:102,empName:"Neha",empSal:39000},
+                 {empId:103,empName:"Sakshi",empSal:50000}
+                ]
+        for(let e of emp){
+            document.write("<p>"+e.empId+" "+ e.empName+" "+e.empSal+"</p>")
+        }
+
+        //emp's salary greater than 20000
+        document.write("salary greter than 20000")
+        for(let e of emp){
+            if(e.empSal>20000){
+                document.write("<p>"+e.empId+" "+ e.empName+" "+e.empSal+"</p>")
+            }
+        }
+    </script>
+</body>
+
+</html>

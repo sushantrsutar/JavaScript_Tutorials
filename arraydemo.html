@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Prompt for input and split the input string into an array
+        let arr = prompt("Enter numbers separated by commas").split(",");
+
+        document.write("Original Array: " + arr);
+        document.write("<br>");
+
+        // Display even numbers
+        document.write("Even numbers: ");
+        for (let i = 0; i < arr.length; i++) {
+            if (arr[i] % 2 === 0) {
+                document.write(arr[i] + " ");
+            }
+        }
+
+        document.write("<br>");
+
+        // Calculate squares of each element
+        let squaredNumbers = [];
+        for (let i = 0; i < arr.length; i++) {
+            squaredNumbers.push(arr[i] * arr[i]);
+        }
+        
+        document.write("Squared Numbers: " + squaredNumbers);
+    </script>
+</body>
+</html>

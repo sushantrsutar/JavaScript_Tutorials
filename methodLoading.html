@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        class DemoMethodOverloading {
+            sum(...args) {
+                if (args.length === 2) {
+                    document.write(`Sum of two arguments: ${args[0] + args[1]}<br>`);
+                } else if (args.length === 3) {
+                    document.write(`Sum of three arguments: ${args[0] + args[1] + args[2]}<br>`);
+                } else {
+                    document.write("Invalid number of arguments<br>");
+                }
+            }
+        }
+
+        let s = new DemoMethodOverloading();
+        s.sum(1, 2, 3);     // Sum of three arguments
+        s.sum(1, 55);       // Sum of two arguments
+        s.sum(11.22, 22);   // Sum of two arguments
+    </script>
+</body>
+</html>

@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        input{
+            margin: 5px;
+        }
+        span{
+            color: red;
+        }
+    </style>
+    <script>
+        function validate() {
+            let msg=document.getElementById("msg")
+            let fname = document.forms["myform"]["fname"].value;
+            let lname = document.forms["myform"]["lname"].value;
+            let email = document.forms["myform"]["email"].value;
+            let age = document.forms["myform"]["age"].value;
+
+            if (fname == '' || lname == '' || email == '' || age=='') {
+                //alert("Fields can't be empty");
+                msg.innerHTML="Filds can't be empty"
+                return false;
+            }
+            return true;
+        }
+    </script>
+</head>
+<body align="center">
+    <h1>Form Demo</h1>
+    <form action="first.js" name="myform" onsubmit="return validate()">
+        <input type="text" name="fname" id="fname" placeholder="Enter first name"><br>
+        <input type="text" name="lname" id="lname" placeholder="Enter last name"><br>
+        <input type="text" name="email" id="email" placeholder="Enter email"><br>
+        <input type="text" name="age" id="age" placeholder="Enter age"><br>
+        <span id="msg"></span><br>
+        <button type="submit">Submit</button>
+    </form>
+</body>
+</html>

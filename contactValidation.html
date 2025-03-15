@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact validation</title>
+    <style>
+        span {
+            color: red;
+        }
+    </style>
+    <script>
+        function validateContact() {
+            let contact = document.getElementById("input").value;
+            let msg = document.getElementById("msg")
+            if (contact == "") {
+                msg.innerHTML = "Contact not empty"
+            }
+            else if (contact.length <= 7 || contact.length > 10){
+                msg.innerHTML="number less than 7 or greater than 10"
+            }
+        
+            else{
+            for(let i=0;i<contact.length;i++){
+                if(isNaN(contact[i])){
+                    msg.innerHTML="only numbers are allowed"
+                }
+            }
+            }
+        }
+
+    </script>
+</head>
+
+<body>
+    <form">
+        <h1>validate Contact</h1>
+        <input type="text" id="input" placeholder="Enter contact number">
+        <button onclick="validateContact()">validate Contact</button>
+        <span id="msg"></span>
+        </form>
+</body>
+
+</html>

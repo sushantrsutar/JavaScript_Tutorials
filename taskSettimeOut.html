@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SettimeOut task</title>
+</head>
+<body>
+    <h1>Course list</h1>
+    <ul id="courseList"></ul>
+
+    <script>
+        let course=["Js","Html","css","python","java"]
+        function printCourse(){
+            let courseListElement=document.getElementById("courseList");
+            for(let c of course){
+                let li=document.createElement("li")
+                li.innerHTML=c
+                courseListElement.appendChild(li)
+            }
+        }
+        setTimeout(printCourse,3000)
+    </script>
+</body>
+</html>

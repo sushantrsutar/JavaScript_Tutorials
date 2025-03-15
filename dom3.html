@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change color</title>
+    <style>
+        div{
+            background-color: red;
+            width: 200px;
+            height: 200px;
+        }
+    </style>
+    <script>
+    function changeColor(){
+        document.getElementsByTagName("div")[0].style.backgroundColor="black"
+    }
+    function changeColorBlue(){
+    document.getElementsByTagName("div")[0].style.backgroundColor="blue"
+    }
+    function changeParaColor(){
+        document.getElementById("para").style.color="blue"
+    }
+
+    </script>
+</head>
+<body>
+    <div></div>
+    <button onclick="changeColor()">change color</button>
+    <button onclick="changeColorBlue()">change color Blue</button>
+    <p id="para" style="color:red" onmousemove="changeParaColor()">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perferendis, suscipit animi ex, praesentium laborum velit, earum itaque exercitationem non eum id excepturi ratione. Dolores asperiores consectetur rerum cum? Soluta, reiciendis.</p>
+</body>
+</html>

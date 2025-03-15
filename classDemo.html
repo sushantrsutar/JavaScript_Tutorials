@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>class Demo</title>
+    <script>
+        class Student {
+            //  fName="sushant"
+            //  lName="sutar"
+            fName
+            lName
+            constructor(fName,lName){
+                this.fName=fName
+                this.lName=lName
+            }
+            static staticMethod(){
+                document.write("<p>"+"static method"+"</p>")
+            }
+            display() {
+                document.write("<p>"+"Name : " + this.fName.concat(" ", this.lName)+"</p>")
+            }
+        }
+        new Student("sushant","sutar").display()
+        Student.staticMethod()
+        
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

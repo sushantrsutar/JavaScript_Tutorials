@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function showPass(){
+            let passinput = document.getElementById("pass");
+            let checkbox = document.getElementById("box");
+            if (checkbox.checked) {
+                alert("do you want show password")
+                passinput.setAttribute("type", "text");
+            } else {
+                passinput.setAttribute("type", "password");
+            }
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <input type="password" id="pass" placeholder="Enter password"><br>
+        <input type="checkbox" id="box" onclick="showPass()"> Show password
+    </div>
+</body>
+</html>

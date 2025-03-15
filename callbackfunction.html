@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <Script>
+            function display(result){
+                document.write("Result : "+result)
+            }
+            function print(ans){
+                document.write("ans : "+ans)
+            }
+            function myAdd(a,b,fun){
+                let sum=a+b
+                fun(sum)
+            }
+            myAdd(10,20,display)
+            myAdd(30,40,print)
+           
+            
+    </Script>
+</body>
+</html>

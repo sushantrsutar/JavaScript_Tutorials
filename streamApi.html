@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <script>
+        document.write("<h1>" + "Stream API" + "</h1>")
+        let arr = [1, 2, 3, 4, 5, 6, 7, 8, 9,10]
+        document.write("Normal Array " + arr + "<br>")
+
+        //map
+        //arr=arr.map(x=>(x*x))
+        //document.write(" Squre Array "+arr+"<br>")
+
+        // function squ(x) {
+            // return x * x
+        // }
+        // let square = arr.map(squ)
+        // document.write(square)
+
+
+        //filter
+    //    function evenNum(n){
+        // return n%2==0
+    //    }
+    //    let evenArr=arr.filter(evenNum)
+    //    document.write(evenArr)
+
+        // function oddNum(n){
+            // return n%2!=0
+        // }
+        // let oddArr=arr.filter(oddNum)
+        // document.write(oddArr)
+
+        //reduce
+    // function sum(a,b){
+        // return a+b
+    // }
+    // let sumArr=arr.reduce(sum)
+    // document.write(sumArr)
+
+    let sum=arr.reduce((x,y)=>x+y,0)
+    let mult=arr.reduce((x,y)=>x*y,1)
+    document.write(" sum = "+sum)
+    document.write(" mult = "+mult)
+
+
+
+    </script>
+</body>
+
+</html>

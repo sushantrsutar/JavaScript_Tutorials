@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Arrays</title>
+</head>
+<body>
+    <Script>
+        document.write("<h1>Array in js</h1>")
+        let arr=[10,20,30,40,50,60,70,80]
+        let arr2=[1,2,3,4,5,6,]
+        document.write(arr+"<br>")
+        document.write(arr[2]+"<br>")
+        document.write(arr.pop()+"<br>")//remove last ele and return it
+        document.write(arr.shift()+"<br>")//remove first ele and return it
+        document.write(arr.length+"<br>")
+        document.write(arr.unshift(1)+"<br>")//add ele on first
+        document.write(arr.push(100)+"<br>")//add ele on last
+
+        for(let i=0;i<arr.length;i++){
+            document.write(arr[i]+"<br>")
+        }
+       // document.write(arr.splice(2,5)+"<br>")
+
+        document.write("concat array "+arr.concat(arr2)+"<br>")
+
+        //conversion arr to string
+        let course=["html","css","js"]
+        let str=course.toString()
+        document.write(str+"<br>")
+
+        let sub=new Array(2)
+        document.write(sub.length+"<br>")
+    </Script>
+</body>
+</html>

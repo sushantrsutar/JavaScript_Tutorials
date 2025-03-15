@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Change Type Demo</title>
+    <script>
+        function changeType(){
+            //document.getElementById("ch").setAttribute("type", "radio");
+            document.getElementsByClassName("ch1")[0].setAttribute("type","radio")
+            document.getElementsByClassName("ch1")[1].setAttribute("type","radio")
+        }
+        function setPara(){
+            document.getElementsByClassName("p1")[0].innerHTML = "one";
+            document.getElementsByClassName("p1")[1].innerHTML = "two";
+            document.getElementsByClassName("p1")[2].innerHTML = "three";
+        }
+    </script>
+</head>
+<body>
+    <input type="checkbox" id="ch"> html
+    <input type="checkbox" class="ch1">one
+    <input type="checkbox" class="ch1">two
+    <button onclick="changeType()">Change Type</button>
+    
+    <p class="p1"></p>
+    <p class="p1"></p>
+    <p class="p1"></p>
+    
+    <button onclick="setPara()">Click for Para</button>
+</body>
+</html>
